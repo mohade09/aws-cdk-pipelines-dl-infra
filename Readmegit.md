@@ -19,21 +19,20 @@ git clone https://gitlab.com/debadatta.moha/my-dbt-project.git
 cd my-dbt-project
 
 
-### Push an existing folder
-```
+Push an existing folder
+
 cd existing_folder
 git init --initial-branch=main
 git remote add origin https://gitlab.com/debadatta.moha/my-dbt-project.git
 git add .
 git commit -m "Initial commit"
 git push -u origin main
-```
 
-### Push an existing Git repository
-```
+
+Push an existing Git repository
+
 cd existing_repo
 git remote rename origin old-origin
 git remote add origin https://gitlab.com/debadatta.moha/my-dbt-project.git
 git push -u origin --all
 git push -u origin --tags
-```
